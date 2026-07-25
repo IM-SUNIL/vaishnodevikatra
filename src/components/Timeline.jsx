@@ -4,11 +4,11 @@ export default function Timeline({ steps = [] }) {
   if (!steps || steps.length === 0) return null;
 
   return (
-    <div className="relative border-l-2 border-dashed border-saffron-300 ml-4 md:ml-8 my-8 pl-8 md:pl-12 space-y-12">
+    <div className="relative border-l-2 border-dashed border-saffron-300 ml-6 md:ml-8 my-8 pl-8 md:pl-12 space-y-12">
       {steps.map((step, index) => (
         <div key={index} className="relative group">
           {/* Milestone Circle Marker */}
-          <span className="absolute -left-[45px] md:-left-[61px] top-1.5 flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full border-4 border-cream-50 bg-saffron-500 text-white font-bold text-sm shadow-md transition-all duration-300 group-hover:bg-crimson-600 group-hover:scale-110">
+          <span className="absolute -left-[49px] md:-left-[65px] top-1.5 flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full border-[3px] md:border-4 border-cream-50 bg-saffron-500 text-white font-bold text-sm md:text-base shadow-md transition-all duration-300 group-hover:bg-crimson-600 group-hover:scale-110">
             {index + 1}
           </span>
 
