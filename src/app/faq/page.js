@@ -4,11 +4,77 @@ import Image from "next/image";
 import FAQAccordion from "@/components/FAQAccordion";
 
 export const metadata = {
-  title: "Frequently Asked Questions (FAQ) - Shri Mata Vaishno Devi Yatra",
-  description: "Get answers to all your queries regarding the Shri Mata Vaishno Devi Yatra. Learn about RFID cards, helicopter ticket bookings, room reservations, locker systems, and code of conduct rules.",
+  title: "Vaishno Devi Yatra FAQ — Distance, Height, Parchi, Weather, Train, Aarti",
+  description:
+    "Answers to top questions about Vaishno Devi Yatra: ki chadhai kitne kilometre hai (12 km), height from sea level (5200 ft), yatra parchi process, katra weather, helicopter booking, aarti timing, train to Katra, and more.",
+  keywords: [
+    "vaishno devi faq", "vaishno devi ki chadhai kitne kilometre hai",
+    "vaishno devi height from sea level", "vaishno devi altitude",
+    "vaishno devi yatra parchi", "yatra parchi vaishno devi",
+    "vaishno devi aarti", "vaishno devi train", "katra weather",
+    "vaishno devi distance walk from katra", "vaishno devi ki chadhai kitni hai",
+  ],
 };
 
 export default function FAQPage() {
+  // FAQPage JSON-LD — powers Google FAQ rich results in SERP
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Vaishno Devi ki chadhai kitne kilometre hai? (How many km is the trek?)",
+        "acceptedAnswer": { "@type": "Answer", "text": "Vaishno Devi ki chadhai (trek distance) from Banganga, Katra to the Holy Bhawan is 12 km one way. If you continue to Bhairon Nath Temple, the total one-way distance becomes 13.5 km. Round trip is 27 km. The trek takes 4–6 hours for a healthy adult." }
+      },
+      {
+        "@type": "Question",
+        "name": "Vaishno Devi height from sea level? (Vaishno Devi altitude)",
+        "acceptedAnswer": { "@type": "Answer", "text": "The Holy Bhawan of Vaishno Devi is at an altitude of 1,584 metres (5,200 feet) above sea level. Bhairon Nath Temple, the highest point of the Yatra, is at 2,010 metres (6,600 feet). Katra base camp is at approximately 910 metres (2,990 feet)." }
+      },
+      {
+        "@type": "Question",
+        "name": "Vaishno Devi yatra parchi kaise milti hai? (How to get yatra parchi?)",
+        "acceptedAnswer": { "@type": "Answer", "text": "Vaishno Devi yatra parchi (RFID card) can be obtained free of cost in two ways: (1) Online registration at the official website maavaishnodevi.org — download and print your yatra parchi. (2) Walk-in counters at Katra Railway Station, Katra Bus Stand, and Banganga. The RFID card is mandatory for all pilgrims." }
+      },
+      {
+        "@type": "Question",
+        "name": "Vaishno Devi ka mausam (weather) kaisa rehta hai?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Katra ka mausam varies by season. In summer (May–Aug): 28–42°C in Katra, 15–25°C at Bhawan. In winter (Dec–Feb): 5–18°C in Katra, minus 8°C to 5°C at Bhawan with heavy snowfall. Best time: March–May and September–November when temperature is 12–28°C in Katra and 5–18°C at Bhawan." }
+      },
+      {
+        "@type": "Question",
+        "name": "Vaishno Devi train — which trains go to Katra?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Key trains to Katra (SVDK station): Vande Bharat Express (Delhi–Katra), Shri Mata Vaishno Devi Katra Express, Uttar Sampark Kranti Express. From Delhi, the journey takes 10–12 hours. Book train tickets at IRCTC. Jammu Tawi (JAT) is the alternate junction with more train options — from there take a taxi or bus to Katra (50 km, 1.5 hrs)." }
+      },
+      {
+        "@type": "Question",
+        "name": "Vaishno Devi aarti timing — when does aarti take place?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The main Aarti at Vaishno Devi Bhawan takes place at two times: Subah ki Aarti (Morning) around 5:00 AM, and Shaam ki Aarti (Evening) around 7:00 PM. The special Atka Aarti (before sunrise, typically 3:00–4:30 AM) can be booked in advance at the official Shrine Board website. Exact timings vary by season." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the RFID card mandatory, and where can I collect it?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, the RFID card is 100% mandatory for all pilgrims and must be carried visibly around the neck at all times. It is issued free of cost at the Katra Railway Station, Katra Bus Stand, and other designated counters. You cannot cross the security checkpoints at Banganga without it." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the best time of year to visit the Shrine?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The temple is open 24/7 year-round. However, the best months are March to May (pleasant weather) and September to November (autumn and festive Navratri seasons). Winter months (December to February) can be very cold, with occasional snowfall at higher altitudes." }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to climb the yatra track?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The 12 km walk from Katra to Bhawan usually takes between 4 to 6 hours for a healthy adult. If you continue up to Bhairon temple (1.5 km more), it adds another 45–60 minutes. Porters, horses, palkis, and helicopters are available to reduce travel time." }
+      },
+      {
+        "@type": "Question",
+        "name": "Vaishno Devi mandir kahan hai? (Where is Vaishno Devi located?)",
+        "acceptedAnswer": { "@type": "Answer", "text": "Shri Mata Vaishno Devi Mandir is located in the Trikuta Mountains in Reasi district, Jammu & Kashmir, India. The base camp (Katra) is 50 km from Jammu city, 700 km from Delhi, and 220 km from Amritsar. The coordinates are approximately 32.99°N, 74.95°E." }
+      }
+    ]
+  };
+
   const generalFaqs = [
     {
       question: "Is the RFID card mandatory, and where can I collect it?",
@@ -89,6 +155,11 @@ export default function FAQPage() {
 
   return (
     <div className="flex flex-col w-full min-h-screen bg-cream-50 animate-fade-in-up">
+      {/* FAQPage JSON-LD for Google rich results */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* 1. Hero Section */}
       <section className="relative h-[30vh] md:h-[40vh] w-full flex items-center overflow-hidden bg-stone-900">
         <div className="absolute inset-0 z-0">

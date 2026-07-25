@@ -35,6 +35,7 @@ export default function Navbar() {
   }, [pathname]);
 
   const guidesLinks = [
+    { name: "Trek Distance & Route Guide", href: "/trek" },
     { name: "Yatra Registration Guide", href: "/services/yatra-registration" },
     { name: "Room Booking Guide", href: "/services/room-booking" },
     { name: "Helicopter Booking Guide", href: "/services/helicopter" },

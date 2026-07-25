@@ -8,6 +8,27 @@ import YoutubePopup from "@/components/YoutubePopup";
 import fs from "fs";
 import path from "path";
 
+export const metadata = {
+  title: "Vaishno Devi Yatra Guide — Katra, Mausam, Height, Trek Distance & Parchi",
+  description:
+    "Shri Mata Vaishno Devi Yatra complete guide. Vaishno Devi ki chadhai 12 km, height 5200 ft (1584 m) from sea level. Check Katra ka mausam, get yatra parchi (RFID), helicopter booking, train, room booking, trek route. Mandir location: Katra, Reasi, J&K.",
+  keywords: [
+    "vaishno devi", "vaishno", "mata vaishno devi", "man vaishno devi", "vaishno mata",
+    "vaishno devi yatra", "vaishno devi ki chadhai kitne kilometre hai",
+    "vaishno devi height from sea level", "vaishno devi altitude", "vaishno devi height",
+    "vaishno devi ka mausam", "vaishno devi ka temperature", "katra weather",
+    "vaishno devi mandir kahan hai", "vaishno devi katra", "shri mata vaishno devi katra",
+    "vaishno devi yatra parchi", "yatra parchi vaishno devi", "vaishno devi yatra update",
+    "vaishno devi distance", "vaishno devi train", "delhi to vaishno devi",
+    "वैष्णो देवी", "माता वैष्णो देवी", "वैष्णो देवी मंदिर",
+  ],
+  openGraph: {
+    title: "Vaishno Devi Yatra Guide — Katra, Mausam, Height, Distance, Parchi",
+    description: "Complete Vaishno Devi guide. 12 km trek, 5200 ft height, katra mausam, yatra parchi (RFID), helicopter booking and more.",
+    type: "website",
+  },
+};
+
 export default function Home() {
   // Read slider images from public/heroslider directory
   const heroSliderDir = path.join(process.cwd(), "public", "heroslider");
@@ -249,6 +270,36 @@ export default function Home() {
           <div className="text-center last:border-0">
             <span className="block text-3xl md:text-4xl font-extrabold text-crimson-700 font-display">Free</span>
             <span className="text-xs md:text-sm font-bold text-stone-550 uppercase tracking-wider mt-1 block">RFID Registration</span>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO Quick Answers — targets featured snippets for top searched queries */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-4 w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="bg-white border border-stone-200 rounded-2xl p-4 shadow-xs hover:border-saffron-300 transition-colors">
+            <p className="text-[10px] font-bold uppercase tracking-widest text-saffron-600 mb-1">Vaishno Devi ki Chadhai</p>
+            <p className="text-sm font-bold text-stone-900 mb-1">Katra to Bhawan: <span className="text-crimson-700">12 km</span></p>
+            <p className="text-xs text-stone-500 leading-relaxed">Total trek distance from Banganga, Katra to the Holy Bhawan is <strong>12 km</strong> (one way). Including Bhairon Temple it is 13.5 km.</p>
+            <Link href="/trek" className="text-[10px] font-bold text-saffron-600 hover:underline mt-2 block">Full Trek Guide →</Link>
+          </div>
+          <div className="bg-white border border-stone-200 rounded-2xl p-4 shadow-xs hover:border-saffron-300 transition-colors">
+            <p className="text-[10px] font-bold uppercase tracking-widest text-crimson-600 mb-1">Vaishno Devi Height / Altitude</p>
+            <p className="text-sm font-bold text-stone-900 mb-1">Bhawan: <span className="text-crimson-700">5,200 ft (1,584 m)</span></p>
+            <p className="text-xs text-stone-500 leading-relaxed">Bhawan altitude is <strong>1,584 metres (5,200 ft)</strong> above sea level. Bhairon Nath Temple is at 2,010 m (6,600 ft) — the highest point of the yatra.</p>
+            <Link href="/trek" className="text-[10px] font-bold text-saffron-600 hover:underline mt-2 block">Height Details →</Link>
+          </div>
+          <div className="bg-white border border-stone-200 rounded-2xl p-4 shadow-xs hover:border-saffron-300 transition-colors">
+            <p className="text-[10px] font-bold uppercase tracking-widest text-gold-600 mb-1">Katra ka Mausam / Weather</p>
+            <p className="text-sm font-bold text-stone-900 mb-1">Best time: <span className="text-saffron-600">Mar–May &amp; Sep–Nov</span></p>
+            <p className="text-xs text-stone-500 leading-relaxed">Katra temperature ranges from <strong>12°C–36°C</strong> (summer) to <strong>5°C–18°C</strong> (winter). Bhawan is 10–15°C colder. Best months: March–May &amp; September–November.</p>
+            <Link href="/travel/weather" className="text-[10px] font-bold text-saffron-600 hover:underline mt-2 block">Full Weather Guide →</Link>
+          </div>
+          <div className="bg-white border border-stone-200 rounded-2xl p-4 shadow-xs hover:border-saffron-300 transition-colors">
+            <p className="text-[10px] font-bold uppercase tracking-widest text-stone-500 mb-1">Yatra Parchi / RFID</p>
+            <p className="text-sm font-bold text-stone-900 mb-1">Registration: <span className="text-saffron-600">Free &amp; Mandatory</span></p>
+            <p className="text-xs text-stone-500 leading-relaxed">Vaishno Devi yatra parchi (RFID card) is <strong>free</strong> and mandatory for all pilgrims. Register online or collect at Katra counters before the trek starts.</p>
+            <Link href="/services/yatra-registration" className="text-[10px] font-bold text-saffron-600 hover:underline mt-2 block">Get Yatra Parchi →</Link>
           </div>
         </div>
       </section>

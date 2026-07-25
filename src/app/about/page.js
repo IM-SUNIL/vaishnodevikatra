@@ -5,8 +5,21 @@ import NoticeBox from "@/components/NoticeBox";
 import FAQAccordion from "@/components/FAQAccordion";
 
 export const metadata = {
-  title: "About Shri Mata Vaishno Devi - History, Legends & The Holy Sanctum",
-  description: "Learn about the history, spiritual origin, and sacred legends of Shri Mata Vaishno Devi, Katra. Explore details on the Holy Cave and the three Pindies: Maha Kali, Maha Lakshmi, and Maha Saraswati.",
+  title: "Vaishno Devi Mandir Kahan Hai — Location, History & Holy Cave Guide",
+  description:
+    "Vaishno Devi mandir kahan hai? Shri Mata Vaishno Devi temple is located in Trikuta Mountains, Katra, Reasi, Jammu & Kashmir. Learn the complete history, sacred legends of mata vaishno devi, the three Pindies, and the Holy Cave at Bhawan.",
+  keywords: [
+    "vaishno devi mandir kahan hai", "vaishno devi kahan hai", "vaishno devi mandir kahan per hai",
+    "vaishno devi mandir", "vaishno devi temple jammu kashmir", "vaishno devi temple",
+    "mata vaishno devi shrine", "shri mata vaishno devi katra", "vaishno devi bhawan",
+    "vaishno devi history", "vaishno devi cave", "vaishno devi pindies",
+    "vaishno mata mandir", "vaishno devi shrine board", "मंदिर वैष्णो देवी",
+  ],
+  openGraph: {
+    title: "Vaishno Devi Mandir — Location, History & Holy Cave",
+    description: "Where is Vaishno Devi mandir? Located in Trikuta Hills, Katra, J&K. History, legends, and complete shrine guide.",
+    type: "article",
+  },
 };
 
 export default function AboutPage() {
