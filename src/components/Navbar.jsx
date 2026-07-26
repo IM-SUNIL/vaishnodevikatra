@@ -65,7 +65,7 @@ export default function Navbar() {
       <div className="bg-crimson-700 text-white py-2.5 px-4 text-xs font-semibold border-b border-crimson-800/40 shadow-inner z-50">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
           {/* Left Buttons */}
-          <div className="flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-3">
             <a
               href="https://www.maavaishnodevi.org/suggestions.aspx"
               target="_blank"
