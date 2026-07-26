@@ -252,9 +252,6 @@ export default function Home() {
             The Yatra has officially resumed after temporary suspension due to bad weather. Click here to read full updates, current weather conditions, and travel guidelines for pilgrims.
           </NoticeBox>
         </Link>
-        <NoticeBox type="warning" title="Mandatory RFID Card Guidelines">
-          RFID Access Cards are now strictly mandatory for all pilgrims crossing the Banganga Gate. All yatris must get their RFID cards printed at the railway station or bus stand counters in Katra immediately upon arrival. Running without a valid RFID card is a punishable offense.
-        </NoticeBox>
       </section>
 
       {/* 3. Quick Stats Bar */}
