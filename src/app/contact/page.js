@@ -135,8 +135,8 @@ export default function ContactPage() {
   const personalContacts = [
     {
       label: "WhatsApp",
-      value: "+91-XXXXX-XXXXX",
-      href: "https://wa.me/91XXXXXXXXXX",
+      value: "+91-9797698088",
+      href: "https://wa.me/919797698088",
       color: "saffron",
       icon: (
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -146,8 +146,8 @@ export default function ContactPage() {
     },
     {
       label: "Email Us",
-      value: "contact@vaishnodevikatra.in",
-      href: "mailto:contact@vaishnodevikatra.in",
+      value: "NA",
+      href: null,
       color: "crimson",
       icon: (
         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
@@ -157,8 +157,8 @@ export default function ContactPage() {
     },
     {
       label: "Instagram",
-      value: "@vaishnodevikatra",
-      href: "https://www.instagram.com/vaishnodevikatra",
+      value: "@soloridingvlogs",
+      href: "https://www.instagram.com/soloridingvlogs",
       color: "saffron",
       icon: (
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -168,8 +168,8 @@ export default function ContactPage() {
     },
     {
       label: "YouTube Channel",
-      value: "Vaishno Devi Yatra Guide",
-      href: "https://youtube.com/@vaishnodevikatra",
+      value: "NA",
+      href: null,
       color: "crimson",
       icon: (
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

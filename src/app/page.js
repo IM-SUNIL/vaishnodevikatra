@@ -246,10 +246,12 @@ export default function Home() {
       </HeroSlider>
 
       {/* 2. Live Alerts / Notice Block */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-20">
-        <NoticeBox type="warning" title="Mandatory RFID Card Guidelines">
-          RFID Access Cards are now strictly mandatory for all pilgrims crossing the Banganga Gate. All yatris must get their RFID cards printed at the railway station or bus stand counters in Katra immediately upon arrival. Running without a valid RFID card is a punishable offense.
-        </NoticeBox>
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-20 flex flex-col gap-4">
+        <Link href="/blogs/yatra-resume" className="block w-full cursor-pointer hover:opacity-95 transition-opacity">
+          <NoticeBox type="success" title="🟢 LATEST NEWS: Mata Vaishno Devi Yatra Resumed">
+            The Yatra has officially resumed after temporary suspension due to bad weather. Click here to read full updates, current weather conditions, and travel guidelines for pilgrims.
+          </NoticeBox>
+        </Link>
       </section>
 
       {/* 3. Quick Stats Bar */}
