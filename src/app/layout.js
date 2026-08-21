@@ -128,6 +128,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${outfit.variable} ${cinzel.variable} h-full antialiased`}>
       <head>
+        {/* Google AdSense Verification Script */}
+        <script 
+          async 
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6304710753279952"
+          crossOrigin="anonymous"
+        ></script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

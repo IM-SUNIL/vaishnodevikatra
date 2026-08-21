@@ -134,9 +134,9 @@ export default function ContactPage() {
   /* ── Personal / Guide Portal contact data ─────────────────── */
   const personalContacts = [
     {
-      label: "WhatsApp",
-      value: "+91-9797698088",
-      href: "https://wa.me/919797698088",
+      label: "Official Helpline",
+      value: "1800-180-5222",
+      href: "tel:18001805222",
       color: "saffron",
       icon: (
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
