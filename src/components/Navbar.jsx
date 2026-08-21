@@ -92,10 +92,10 @@ export default function Navbar() {
               Chat With Us
             </a>
             <a
-              href="tel:9797698088"
+              href="tel:18001805222"
               className="bg-crimson-900 hover:bg-crimson-950 px-2 md:px-3 py-1 rounded font-bold hover:underline flex items-center gap-1.5 border border-crimson-850/50"
             >
-              <span className="text-[10px] md:text-xs">📞</span> <span className="text-[9px] md:text-xs">9797698088</span>
+              <span className="text-[10px] md:text-xs">📞</span> <span className="text-[9px] md:text-xs">1800-180-5222</span>
             </a>
           </div>
         </div>
